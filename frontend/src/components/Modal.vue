@@ -28,14 +28,14 @@
     border: none;
     border-radius: 5px;
     background-color: #fff;
-    color: #8432DE;
+    color: #FF6712;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
     cursor: pointer;
   }
 
   .modal-footer button:hover {
-    background-color: #2193b0;
+    background-color: #933e0c;
     color: #fff;
   }
   </style>

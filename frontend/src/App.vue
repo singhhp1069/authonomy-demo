@@ -110,7 +110,7 @@ export default {
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
-  background: #8432de; /* Background gradient */
+  background: #FF6712; /* Background gradient */
   min-height: 100vh; /* Full height */
   display: flex;
   flex-direction: column;
@@ -123,6 +123,7 @@ p {
 }
 .logo {
   max-width: 250px;
+  background: white;
 }
 
 .button-group button {
@@ -131,7 +132,7 @@ p {
   border: none;
   border-radius: 5px;
   background-color: #fff;
-  color: #8432de;
+  color: #FF6712;
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s;
   cursor: pointer;

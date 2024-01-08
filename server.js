@@ -45,20 +45,27 @@ const middleWare = (req, res, next) => {
 app.get("/api/news", middleWare, (req, res) => {
     res.json([
         {
-            "author": "Steven John",
-            "title": "Apple Trade In program lets you get credit toward new devices or a gift card",
-            "description": "Apple's Trade In program can help you get a new product for less. Here's how to prepare your device to get the maximum value.",
-            "url": "https://www.businessinsider.com/apple-trade-in",
-            "publishedAt": "2024-01-06T20:22:01Z",
-
-        },
-        {
-            "author": "Deanna Ritchie",
-            "title": "OpenAI seeks media licensing for language models",
-            "description": "OpenAI, a prominent artificial intelligence technology firm, has allegedly proposed to license news articles from specific media companies.",
-            "url": "https://readwrite.com/openai-seeks-media-licensing-for-language-models/",
-            "publishedAt": "2024-01-06T14:05:20Z",
-        }
+            "id": "deal1",
+            "publisher_did": "did:key:z6MkgAQUu1rtaBRjH8cGMPz5ef3LUQT3rWbyj1mbfva67f4Z",
+            "title": "50% Off on All Electronics",
+            "description": "Enjoy a massive 50% discount on TVs, smartphones, and more. Limited time offer!",
+            "category": "Electronics",
+            "validUntil": "2024-02-28",
+            "discountRate": 50,
+            "terms": "Discount applies to select items only. Excludes clearance items.",
+            "imageURL": "https://mydealapp.com/images/deals/electronics-discount.jpg"
+          },
+          {
+            "id": "deal2",
+            "publisher_did": "did:key:z6MkgAQUu1rtaBRjH8cGMPz5ef3LUQT3rWbyj1mbfva67f4Z",
+            "title": "Buy One Get One Free - Coffee Lovers",
+            "description": "Purchase any large coffee and get a second one free. Perfect for coffee enthusiasts!",
+            "category": "Food & Beverages",
+            "validUntil": "2024-03-15",
+            "discountRate": 100,
+            "terms": "Offer valid for large coffee sizes only. Free coffee must be of equal or lesser value.",
+            "imageURL": "https://mydealapp.com/images/deals/coffee-bogo.jpg"
+          }
     ])
 })
 // Handles any requests that don't match the ones above
